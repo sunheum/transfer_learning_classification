@@ -49,7 +49,7 @@ def main(config):
     model, input_size = get_model(config)
     model = model.to(device)
 
-    train_loader, valid_loader, test_loader = get_loaders(config, input_size)
+    train_loader, valid_loader, test_set = get_loaders(config, input_size)
 
     print("Train:", len(train_loader.dataset))
     print("Valid:", len(valid_loader.dataset))

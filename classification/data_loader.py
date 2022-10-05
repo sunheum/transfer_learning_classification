@@ -1,6 +1,6 @@
 import os
 
-from torch.utils.data import DataLoader, random_split
+from torch.utils.data import Dataset, DataLoader, random_split
 
 from torchvision import transforms
 from torchvision.datasets import ImageFolder
@@ -59,13 +59,13 @@ def get_loaders(config, input_size):
         batch_size=config.batch_size,
         shuffle=False,
     )
-    test_loader = DataLoader(
+    predict_loader = DataLoader(
         dataset=test_set,
         batch_size=config.batch_size,
         shuffle=False,
     )
 
-    return train_loader, valid_loader, test_loader
+    return train_loader, valid_loader, predict_loader
 
 
 def divide_dataset(
