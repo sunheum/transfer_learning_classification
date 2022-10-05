@@ -19,7 +19,7 @@ python train.py --model_fn resnet.pth --gpu_id 0 --n_epochs 20 --model_name resn
 python predict.py --model_fn resnet.pth --gpu_id 0
 
 ## 예측 결과
-**- 예측 결과 시각화**  
+- ** 예측 결과 시각화**  
 ![결과1](./imgs/Figure_1.png)  
-**- 결과 csv파일**  
+- ** 결과 csv파일**  
 ![결과2](./imgs/result.png)  
