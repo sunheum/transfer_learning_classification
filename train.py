@@ -6,7 +6,6 @@ import torch.nn as nn
 import torch.optim as optim
 
 from classification.data_loader import get_loaders
-from classification.trainer import Trainer
 from classification.model_loader import get_model
 from classification.utils import *
 
